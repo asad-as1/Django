@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Blog</title>
+</head>
+<body>
+    <h1>All Blog Posts</h1>
+    {% if blogs %}
+        <ul>
+            {% for blog in blogs %}
+                <li><strong>{{ blog.title }}</strong> - {{ blog.content }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No blogs yet!</p>
+    {% endif %}
+</body>
+</html>

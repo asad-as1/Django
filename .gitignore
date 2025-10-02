@@ -1,0 +1,30 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments (any folder named env, venv, myenv, etc.)
+env/
+venv/
+myenv/
+
+# Django specific
+*.sqlite3
+media/
+staticfiles/
+*.log
+
+# Django migrations (optional, sometimes you may want to track them)
+*/migrations/*.pyc
+*/migrations/__pycache__/
+
+# IDE / Editors
+.vscode/
+.idea/
+*.swo
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
